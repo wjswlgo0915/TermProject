@@ -1,0 +1,82 @@
+.tactic-board-pitch {
+  position: relative;
+  width: min(100%, 34rem);
+  aspect-ratio: 2 / 3;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  background: repeating-linear-gradient(#176044 0 10%, #1c6d4e 10% 20%);
+}
+
+.tactic-board-markings {
+  position: absolute;
+  inset: 4% 6%;
+  border: 2px solid #d4f2e0;
+}
+
+.tactic-board-halfway {
+  position: absolute;
+  inset: 50% 0 auto;
+  border-top: 2px solid #d4f2e0;
+}
+
+.tactic-board-circle {
+  position: absolute;
+  width: 25%;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #d4f2e0;
+  border-radius: 50%;
+}
+
+.tactic-board-area {
+  position: absolute;
+  inset-inline: 23%;
+  height: 16%;
+  border: 2px solid #d4f2e0;
+}
+
+.tactic-board-area-top {
+  top: 0;
+  border-top: 0;
+}
+
+.tactic-board-area-bottom {
+  bottom: 0;
+  border-bottom: 0;
+}
+
+.tactic-board-players {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tactic-board-player {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  gap: 0.15rem;
+  transform: translate(-50%, -50%);
+}
+
+.tactic-board-number {
+  display: grid;
+  width: clamp(1.5rem, 5vw, 2.25rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #173526;
+  font-weight: 700;
+}
+
+.tactic-board-position {
+  padding-inline: 0.25rem;
+  border-radius: 0.25rem;
+  background: #103d2c;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 700;
+}

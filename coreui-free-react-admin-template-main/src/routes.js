@@ -17,6 +17,7 @@ import React from 'react'
 
 // Dashboard
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+const TacticBoard = React.lazy(() => import('./views/tactic-board/TacticBoard'))
 
 // Components
 const Accordion = React.lazy(() => import('./views/components/accordion/Accordion'))
@@ -83,6 +84,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
  * { path: '/components', name: 'Components', element: Cards, exact: true }
  */
 export const routes = [
+  { path: '/tactic-board', name: '축구 전술판', element: TacticBoard },
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/components', name: 'Components', element: Accordion, exact: true },
