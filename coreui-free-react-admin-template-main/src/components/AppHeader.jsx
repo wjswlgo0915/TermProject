@@ -167,13 +167,24 @@ const AppHeader = () => {
         
         </CHeaderNav>
 
-        {/* 로그인 버튼 */}
-        <Link
-          to="/authentication/login"
-          className="btn btn-primary ms-3 me-2"
-        >
-          로그인
-        </Link>
+    
+{/* 로그인 / 회원가입 버튼 */}
+<div className="d-flex align-items-center gap-2 ms-3 me-2">
+  <Link
+    to="/authentication/login"
+    className="btn btn-outline-primary"
+  >
+    로그인
+  </Link>
+
+  <Link
+    to="/authentication/register"
+    className="btn btn-primary"
+  >
+    회원가입
+  </Link>
+</div>
+
 
         <CHeaderNav>
 
