@@ -20,6 +20,7 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import {
   CBadge,
@@ -163,8 +164,19 @@ const AppHeader = () => {
               <CIcon icon={cilEnvelopeOpen} size="lg" />
             </CNavLink>
           </CNavItem>
+        
         </CHeaderNav>
+
+        {/* 로그인 버튼 */}
+        <Link
+          to="/authentication/login"
+          className="btn btn-primary ms-3 me-2"
+        >
+          로그인
+        </Link>
+
         <CHeaderNav>
+
           <li className="nav-item py-1">
             <div className="vr h-100 mx-2 text-body text-opacity-75"></div>
           </li>
